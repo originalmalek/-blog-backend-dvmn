@@ -140,3 +140,4 @@ cython_debug/
 .idea
 sensive_blog/.env
 venv
+.env
