@@ -30,7 +30,7 @@
               <div class="card blog__slide text-center">
                 <div class="blog__slide__img">
 
-                  <img class="card-img rounded-0" src={{popular_post.image_url}} alt="">
+                  <img class="card-img rounded-0" src={{popular_post.image_url}}>
                 </div>
                 <div class="blog__slide__content">
                   <h3><a href="{% url 'post_detail' slug=popular_post.slug %}">{{popular_post.title}}</a></h3>
@@ -53,9 +53,9 @@
               <div class="single-recent-blog-post">
                 <div class="thumb">
                   {% if fresh_post.image_url %}
-                    <img class="img-fluid" src={{fresh_post.image_url}} alt="">
+                    <img class="img-fluid" src={{fresh_post.image_url}}>
                   {% else %}
-                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}">
                   {% endif %}
                   <ul class="thumb-info; max-width: 550px;">
                     <li><a href="{% url 'post_detail' slug=fresh_post.slug %}"><i class="ti-user"></i>{{fresh_post.author}}</a></li>
